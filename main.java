@@ -269,6 +269,50 @@ public class Main {
             System.out.println();
             espera(100);
 
+            System.out.println("[009] Espada Larga");
+            System.out.println("      Propriedades: Mão Principal, Leve, Arremessável 9m");
+            System.out.println("      Tipo de dano: Cortante");
+            System.out.println("      Crítico: 20");
+            System.out.println("      Passivo: ");
+            System.out.println("      Dano: 1d6");
+            System.out.println("      Peso: 2");
+            System.out.println("      Preço: 50 Pratas");
+            System.out.println();
+            espera(100);
+
+            System.out.println("[010] Montante");
+            System.out.println("      Propriedades: Duas mãos, Pesado");
+            System.out.println("      Tipo de dano: Cortante");
+            System.out.println("      Crítico: 20");
+            System.out.println("      Passivo: ");
+            System.out.println("      Dano: 2d12");
+            System.out.println("      Peso: 4");
+            System.out.println("      Preço: 2 Ouros e 25 Pratas");
+            System.out.println();
+            espera(100);
+
+            System.out.println("[011] Espadas Duplas");
+            System.out.println("      Propriedades: Duas mãos, Leve");
+            System.out.println("      Tipo de dano: Cortante");
+            System.out.println("      Crítico: 19");
+            System.out.println("      Passivo: ");
+            System.out.println("      Dano: 2d8");
+            System.out.println("      Peso: 3");
+            System.out.println("      Preço: 1 Ouro e 60 Pratas");
+            System.out.println();
+            espera(100);
+
+            System.out.println("[012] Lâmina Aclarada");
+            System.out.println("      Propriedades: Versátil, Leve");
+            System.out.println("      Tipo de dano: Perfurante");
+            System.out.println("      Crítico: 20");
+            System.out.println("      Passivo: ");
+            System.out.println("      Dano: 1d10/2d10");
+            System.out.println("      Peso: 2");
+            System.out.println("      Preço: 1 Ouro e 40 Pratas");
+            System.out.println();
+            espera(100);
+
             System.out.println("[0] Voltar");
             System.out.println();
 
@@ -331,6 +375,34 @@ public class Main {
                     comprarItem(
                         "Chama-corpos",
                         30000
+                    );
+                    break;
+
+                case 9:
+                    comprarItem(
+                        "Espada Larga",
+                        5000
+                    );
+                    break;
+
+                case 10:
+                    comprarItem(
+                        "Montante",
+                        22500
+                    );
+                    break;
+
+                case 11:
+                    comprarItem(
+                        "Espadas Duplas",
+                        16000
+                    );
+                    break;
+
+                case 12:
+                    comprarItem(
+                        "Lâmina Aclarada",
+                        14000
                     );
                     break;
                 
