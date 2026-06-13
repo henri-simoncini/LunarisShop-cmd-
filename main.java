@@ -313,6 +313,50 @@ public class Main {
             System.out.println();
             espera(100);
 
+            System.out.println("[013] Lança");
+            System.out.println("      Propriedades: Versátil, Leve, Estendido, Munição, Arremessável 9m");
+            System.out.println("      Tipo de dano: Perfurante");
+            System.out.println("      Crítico: 20");
+            System.out.println("      Passivo: ");
+            System.out.println("      Dano: 1d6/2d6");
+            System.out.println("      Peso: 3");
+            System.out.println("      Preço: 85 Pratas");
+            System.out.println();
+            espera(100);
+
+            System.out.println("[014] Pique");
+            System.out.println("      Propriedades: Duas mãos, Leve, Estendido");
+            System.out.println("      Tipo de dano: Perfurante");
+            System.out.println("      Crítico: 20");
+            System.out.println("      Passivo: ");
+            System.out.println("      Dano: 2d6");
+            System.out.println("      Peso: 4");
+            System.out.println("      Preço: 1 Ouro e 20 Pratas");
+            System.out.println();
+            espera(100);
+
+            System.out.println("[015] Archa");
+            System.out.println("      Propriedades: Duas mãos, Leve, Estendido");
+            System.out.println("      Tipo de dano: Perfurante");
+            System.out.println("      Crítico: 20");
+            System.out.println("      Passivo: ");
+            System.out.println("      Dano: 2d8");
+            System.out.println("      Peso: 4");
+            System.out.println("      Preço: 1 Ouro e 60 Pratas");
+            System.out.println();
+            espera(100);
+
+            System.out.println("[016] Lança Garceira");
+            System.out.println("      Propriedades: Versátil, Leve, Estendido, Arremessável 15m");
+            System.out.println("      Tipo de dano: Perfurante");
+            System.out.println("      Crítico: 20");
+            System.out.println("      Passivo: ");
+            System.out.println("      Dano: 1d8/2d8");
+            System.out.println("      Peso: 3");
+            System.out.println("      Preço: 1 Ouro e 70 Pratas");
+            System.out.println();
+            espera(100);
+
             System.out.println("[0] Voltar");
             System.out.println();
 
@@ -403,6 +447,34 @@ public class Main {
                     comprarItem(
                         "Lâmina Aclarada",
                         14000
+                    );
+                    break;
+
+                case 13:
+                    comprarItem(
+                        "Lança",
+                        8500
+                    );
+                    break;
+
+                case 14:
+                    comprarItem(
+                        "Pique",
+                        12000
+                    );
+                    break;
+
+                case 15:
+                    comprarItem(
+                        "Archa",
+                        16000
+                    );
+                    break;
+
+                case 16:
+                    comprarItem(
+                        "Lança Garceira",
+                        17000
                     );
                     break;
                 
