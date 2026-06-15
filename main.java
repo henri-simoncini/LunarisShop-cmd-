@@ -140,7 +140,7 @@ public class Main {
         System.out.println("================================");
         System.out.println("           CARRINHO");
         System.out.println("================================");
-
+        
         if (qtdCarrinho == 0) {
             System.out.println("Carrinho vazio.");
         } else {
@@ -149,8 +149,63 @@ public class Main {
             }
         }
         pausar();
+        System.out.println("[1] Remover Item");
+System.out.println("[0] Voltar");
+
+int opcao = scanner.nextInt();
+
+switch(opcao) {
+
+    case 1:
+        removerItemCarrinho();
+        break;
+
+    case 0:
+        return;
+}
+    }
+    static void removerItemCarrinho() {
+
+    if (qtdCarrinho == 0) {
+        System.out.println("Carrinho vazio.");
+        return;
     }
 
+    System.out.println("Itens do carrinho:");
+
+    for (int i = 0; i < qtdCarrinho; i++) {
+
+        System.out.println(
+            "[" + (i + 1) + "] "
+            + carrinho[i]
+        );
+    }
+
+    System.out.print("Qual item deseja remover? ");
+
+    int escolha = scanner.nextInt() - 1;
+
+    if (escolha < 0 || escolha >= qtdCarrinho) {
+
+        System.out.println("Item inválido.");
+        return;
+    }
+
+    saldo += precoCarrinho[escolha];
+
+    System.out.println(
+        carrinho[escolha]
+        + " removido do carrinho."
+    );
+
+    for (int i = escolha; i < qtdCarrinho - 1; i++) {
+
+        carrinho[i] = carrinho[i + 1];
+        precoCarrinho[i] = precoCarrinho[i + 1];
+    }
+
+    qtdCarrinho--;
+    }
     // ============================================================
     // MENU PRINCIPAL
     // ============================================================
